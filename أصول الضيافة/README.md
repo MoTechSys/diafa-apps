@@ -2,7 +2,7 @@
 
 - **اسم الحزمة:** `com.hospitalitybilling.osool_diafa`
 - **بصمة التوقيع SHA-1:** `C8:74:A9:F4:22:40:0E:E3:4F:D2:1D:D5:78:77:82:E5:3C:C3:F9:AA`
-- **كود التفعيل الحالي:** `ASOUL-5689`
+- **كود التفعيل:** القيمة الموجودة في [`license.json`](license.json) (تتغير من هنا مباشرة)
 - **ملف التحكم:** [`license.json`](license.json)
 
 ## التحديث
