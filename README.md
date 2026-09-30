@@ -5,11 +5,11 @@
 > - **diafa-apps** (هنا) — ملفات APK (الإصدارات) + القفل عن بُعد
 > - [diafa-signing-keys](https://github.com/MoTechSys/diafa-signing-keys) (خاص) — مفتاح التوقيع
 
-## التحميل المباشر (آخر إصدار)
+## التحميل المباشر (آخر إصدار: **2.5.0**)
 | | أغلب الجوالات | الجوالات القديمة |
 |---|---|---|
-| **كيف الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.4.0/keif-aldiafa-v2.4.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.4.0/keif-aldiafa-v2.4.0-armv7.apk) |
-| **أصول الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.4.0/asoul-aldiafa-v2.4.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.4.0/asoul-aldiafa-v2.4.0-armv7.apk) |
+| **كيف الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/keif-aldiafa-v2.5.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/keif-aldiafa-v2.5.0-armv7.apk) |
+| **أصول الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/asoul-aldiafa-v2.5.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/asoul-aldiafa-v2.5.0-armv7.apk) |
 
 | التطبيق | اسم الحزمة (ثابت — لا يتغير أبدًا) | المجلد |
 |---|---|---|
