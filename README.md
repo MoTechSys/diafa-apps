@@ -5,11 +5,11 @@
 > - **diafa-apps** (هنا) — ملفات APK (الإصدارات) + القفل عن بُعد
 > - [diafa-signing-keys](https://github.com/MoTechSys/diafa-signing-keys) (خاص) — مفتاح التوقيع
 
-## التحميل المباشر (آخر إصدار: **2.5.0**)
+## التحميل المباشر (آخر إصدار: **2.6.0**)
 | | أغلب الجوالات | الجوالات القديمة |
 |---|---|---|
-| **كيف الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/keif-aldiafa-v2.5.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/keif-aldiafa-v2.5.0-armv7.apk) |
-| **أصول الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/asoul-aldiafa-v2.5.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.5.0/asoul-aldiafa-v2.5.0-armv7.apk) |
+| **كيف الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/keif-aldiafa-v2.6.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/keif-aldiafa-v2.6.0-armv7.apk) |
+| **أصول الضيافة** | [arm64](https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/asoul-aldiafa-v2.6.0-arm64.apk) | [armv7](https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/asoul-aldiafa-v2.6.0-armv7.apk) |
 
 | التطبيق | اسم الحزمة (ثابت — لا يتغير أبدًا) | المجلد |
 |---|---|---|
@@ -19,6 +19,20 @@
 - **التنزيل:** من صفحة [الإصدارات](../../releases/latest) — لكل تطبيق ملفان: `arm64` (أغلب الجوالات الحديثة) و`armv7` (الجوالات القديمة فقط).
 - **التحديث:** ثبّت الملف الجديد فوق القديم مباشرة — **لا تحذف القديم**؛ البيانات تبقى.
 - التطبيقان منفصلان تمامًا (يمكن تثبيتهما معًا على نفس الجوال، ولكلٍّ بياناته).
+
+## التحديث من داخل التطبيق (منذ 2.6.0)
+داخل مجلد كل تطبيق ملف `update.json` يقرأه التطبيق (الإعدادات → تحديث التطبيق، وتلقائيًا كل 24 ساعة):
+
+```json
+{ "version": "2.6.0", "build": 2600,
+  "versionCodes": { "arm64": 4600, "armv7": 3600 },
+  "apks": { "arm64": { "url": "…-arm64.apk", "sha256": "…", "size": 0 },
+            "armv7": { "url": "…-armv7.apk", "sha256": "…", "size": 0 } },
+  "notes": "ما الجديد", "publishedAt": "2026-09-30", "minSupportedBuild": 2500 }
+```
+- التطبيق يختار ملف معماريته، يُنزّله، **يرفض أي ملف لا يطابق `sha256`**، ثم يفتح مثبّت النظام.
+- عند كل إصدار جديد: انشر الملفات في Releases ثم حدّث `update.json` في المجلدين (سكربت: `keif_blins/tools/make_update_json.py`).
+- حذف الملف أو إبقاؤه قديمًا = لا تحديث يظهر (آمن).
 
 ## القفل عن بُعد
 داخل مجلد كل تطبيق ملف `license.json`:

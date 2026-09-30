@@ -1,0 +1,23 @@
+{
+  "version": "2.6.0",
+  "build": 2600,
+  "versionCodes": {
+    "arm64": 4600,
+    "armv7": 3600
+  },
+  "apks": {
+    "arm64": {
+      "url": "https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/keif-aldiafa-v2.6.0-arm64.apk",
+      "sha256": "76801d858a09bba9673c95eaa9ec264932d570383b88a5d02d6a2a6eaed07331",
+      "size": 12855806
+    },
+    "armv7": {
+      "url": "https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/keif-aldiafa-v2.6.0-armv7.apk",
+      "sha256": "989d8bb16c59c4a6e2f8600ff00b673dbe8e4883edd08bde4bf0ed4371403f1b",
+      "size": 12691024
+    }
+  },
+  "notes": "الإصدار 2.6.0:\n• مجلدات PDF حسب العميل داخل كل خدمة\n• التاريخ الهجري (تفعيل/إيقاف من الإعدادات)\n• الترقيم التلقائي بالتاريخ والوقت\n• نسخة احتياطية يومية + اختيارية عند الخروج\n• استعادة تعرض كل النسخ فورًا\n• التحديث من داخل التطبيق",
+  "publishedAt": "2026-09-30",
+  "minSupportedBuild": 2500
+}

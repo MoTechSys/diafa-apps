@@ -1,0 +1,23 @@
+{
+  "version": "2.6.0",
+  "build": 2600,
+  "versionCodes": {
+    "arm64": 4600,
+    "armv7": 3600
+  },
+  "apks": {
+    "arm64": {
+      "url": "https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/asoul-aldiafa-v2.6.0-arm64.apk",
+      "sha256": "0364722fdb29de4e7c5ba7df46da6e6d4afec86e02c4383e2f58f4cf238d4166",
+      "size": 12764246
+    },
+    "armv7": {
+      "url": "https://github.com/MoTechSys/diafa-apps/releases/download/v2.6.0/asoul-aldiafa-v2.6.0-armv7.apk",
+      "sha256": "4dcaaabbbac64653a396b3abf0c3bf0d9aa27d47555da31d70a9cbc7dc90aba0",
+      "size": 12599464
+    }
+  },
+  "notes": "الإصدار 2.6.0:\n• مجلدات PDF حسب العميل داخل كل خدمة\n• التاريخ الهجري (تفعيل/إيقاف من الإعدادات)\n• الترقيم التلقائي بالتاريخ والوقت\n• نسخة احتياطية يومية + اختيارية عند الخروج\n• استعادة تعرض كل النسخ فورًا\n• التحديث من داخل التطبيق",
+  "publishedAt": "2026-09-30",
+  "minSupportedBuild": 2500
+}
